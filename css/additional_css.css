@@ -1,0 +1,11 @@
+.testimonials-carousel .swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    padding: 6px;
+    position: absolute;
+    bottom: -90px !important;
+    left: 46.5%;
+    background-color: #E7EBF0;
+    border-radius: 16px;
+}
