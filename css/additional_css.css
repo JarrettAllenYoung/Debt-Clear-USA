@@ -1,11 +1,164 @@
+.video-js button.vjs-button {
+	font-size: unset;
+	background-color: unset;
+	border-radius: unset;
+}
+
+
+.video-js .vjs-title-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-progress-control,
+.video-js .vjs-poster img {
+	display: none !important;
+}
+
+.video-js .vjs-poster {
+	background-image: url('https://cdn.debtclearusa.com/images/thumbnail-robert-herjavec.jpg') !important;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/* SITEWIDE */
+
+main {
+  min-height: calc(100vh - 610px) !important;
+}
+
+[data-elementor-type="single-page"] {
+  min-height: calc(100vh - 610px) !important;
+}
+
+.elementor-select-wrapper .select-caret-down-wrapper {
+	transform: translatey(-45%) !important;
+}
+.elementor-select-wrapper .select-caret-down-wrapper svg {
+	display: none !important;
+}
+
+.elementor-select-wrapper .select-caret-down-wrapper::before {
+	content: '\25BE';
+	font-size: 24px;
+}
+
+/* Free Yourself of Debt Relief Letters */
+
+.debt-relief-letters-carousel .elementor-swiper-button svg {
+	background-color: #84868980;
+	border-radius: 100%;
+	padding: 5px;
+	fill: black;
+	transition: all 0.3s;
+}
+
+.debt-relief-letters-carousel .elementor-swiper-button svg path {
+	fill: #848689;
+}
+
+.debt-relief-letters-carousel .elementor-swiper-button svg:hover {
+	background-color: #0197F6;
+}
+
+.debt-relief-letters-carousel .elementor-swiper-button svg:hover path {
+	fill: #fff;
+}
+
+.debt-relief-letters-carousel .elementor-swiper-button.elementor-swiper-button-prev {
+    position: absolute;
+    top: 420px;
+		left: 0;
+}
+
+.debt-relief-letters-carousel .elementor-swiper-button.elementor-swiper-button-next {
+    position: absolute;
+    top: 420px;
+    right: 430px;
+}
+
+@media (max-width: 1117px) {
+.debt-relief-letters-carousel .elementor-swiper-button.elementor-swiper-button-next {
+    top: 420px;
+    right: 360px;
+}
+}
+
+@media (max-width: 1024px) {
+.debt-relief-letters-carousel .elementor-swiper-button.elementor-swiper-button-next {
+    top: 420px;
+    right: 180px;
+}
+}
+
+@media (max-width: 767px) {
+.debt-relief-letters-carousel .elementor-swiper-button.elementor-swiper-button-next {
+    top: 420px;
+    right: 0;
+}
+}
+
+
+/* --- TEMPLATES --- */
+
+/* Widget - How much do you owe? */
+
+.debt-option-dropdown select option {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .debt-option-dropdown select option {
+    text-align: left;
+}
+}
+
+/* No Hidden Fees */
+
+@media only screen and (max-width: 767px) {
+    .no-hidden-fees-image-box .elementor-image-box-img {
+        text-align: center;
+    }
+}
+
+/* Testimonials Carousel */
+
 .testimonials-carousel .swiper-pagination-horizontal {
-    display: flex;
-    justify-content: center;
-    max-width: 100px;
-    padding: 6px;
     position: absolute;
     bottom: -90px !important;
-    left: 46.5%;
-    background-color: #E7EBF0;
-    border-radius: 16px;
+}
+
+
+/* BLOG POSTS */
+
+h2.subhead-1 {
+	color: var(--Color-general-brandPrimary, #0D3B66);
+	/* desktop/subhead-1 */
+	font-family: Poppins;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: 1px;
+}
+
+h3.subhead-2 {
+	color: var(--Color-general-brandPrimary, #0D3B66);
+	/* desktop/subhead-2 */
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px; /* 150% */
+	letter-spacing: 1px;
+}
+
+a.blog-post-link {
+	color: var(--Color-general-brandSecondary, #0197F6);
+/* body/text-base/font-normal */
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-decoration-line: underline;
 }
